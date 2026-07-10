@@ -1,0 +1,40 @@
+name: RNAseq Pipeline CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Install Miniconda
+
+        uses: conda-incubator/setup-miniconda@v3
+
+        with:
+
+          auto-update-conda: true
+
+      - name: Install Snakemake
+
+        shell: bash -l {0}
+
+        run: |
+
+          conda install -y -c conda-forge -c bioconda snakemake
+
+      - name: Dry Run
+
+        shell: bash -l {0}
+
+        run: |
+
+          snakemake -n
