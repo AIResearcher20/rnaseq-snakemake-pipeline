@@ -1,0 +1,8 @@
+samples: "samples.tsv"
+
+genome:
+  fasta: "resources/genome/genome.fa"
+  gtf: "resources/annotation/chr22.gtf"
+  star_index: "resources/star_index"
+
+threads: 4
