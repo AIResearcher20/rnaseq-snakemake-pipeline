@@ -15,4 +15,5 @@ benchmarks/
 *.bam
 *.bai
 *.fastq
-*.fastq.gz
+*.fastq.gzfastp.html
+fastp.json
