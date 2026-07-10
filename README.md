@@ -1,1 +1,1 @@
-# rnaseq-snakemake-pipeline
+# RNA-seq Snakemake Pipeline
