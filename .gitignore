@@ -17,3 +17,4 @@ benchmarks/
 *.fastq
 *.fastq.gzfastp.html
 fastp.json
+fastp.html
