@@ -1,0 +1,34 @@
+
+# ==========================
+# RNA-seq Pipeline Config
+# ==========================
+
+# Samples table
+samples: "samples.tsv"
+
+# Threads
+threads: 4
+
+# Genome
+genome_fasta: "resources/genome/genome.fa"
+
+# Annotation
+gtf: "resources/annotation/genes.gtf"
+
+# STAR index
+star_index: "resources/star_index"
+
+# Raw reads
+raw_reads: "data/raw"
+
+# Trimmed reads
+trimmed_reads: "data/trimmed"
+
+# Results
+results: "results"
+
+# Logs
+logs: "logs"
+
+# Benchmarks
+benchmarks: "benchmarks"
